@@ -1,0 +1,69 @@
+.homecontainer {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+
+
+}
+
+.features {
+    max-width: 1024;
+    border: 10px;
+    max-width: 1024px;
+    width: 100%;
+    justify-content: space-between;
+    gap: 20px;
+
+}
+
+.featureitem img {
+
+    width: 400px;
+    height: 400px;
+    position: relative;
+    object-fit: cover;
+    color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 50px;
+
+}
+
+.featuretitles {
+
+    color: black;
+    float: right;
+    margin-right: 250px;
+
+}
+
+.rate {
+    display: flex;
+    margin-top: 20px;
+    color: rgb(9, 57, 90);
+}
+
+.capacity {
+    display: flex;
+    margin-top:
+        20px;
+    color: grey;
+}
+
+.booking {
+    color: white;
+    background-color: rgb(9, 57, 90);
+    padding: 5px;
+    font-weight: bold;
+    border: none;
+    display: flex;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.a {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}

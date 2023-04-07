@@ -9,6 +9,7 @@ import { DateRange } from "react-date-range";
 import "react-date-range/dist/styles.css"; // main css file
 import "react-date-range/dist/theme/default.css"; // theme css file
 import { format } from "date-fns";
+import { data } from "browserslist";
 const Header = () => {
   const [openDate, setOpenDate] = useState(false);
 
@@ -43,11 +44,9 @@ const Header = () => {
       <div className="headersearch">
         <div className="headersearchitem">
           <FontAwesomeIcon icon={faDoorOpen} id="hhh" />
-          <input
-            type="text"
-            placeholder="write class id"
-            className="headersearchinput"
-          />
+          <span className="headersearchinput">
+            projector required <input type="checkbox" />
+          </span>
         </div>
         <div className="headersearchitem">
           <FontAwesomeIcon icon={faCalendarDays} />
@@ -96,7 +95,19 @@ const Header = () => {
             </div>
           )}
         </div>
-        <button className="headerbtn"> search </button>
+        <a href="/Booking">
+          <button className="headerbtn"> search </button>
+        </a>
+        {/* <div className="list result">
+        { loading ? "loading " : <>
+        {arrayUser.map(item=>(
+          <featured item={item} key= {item.id}/>
+
+        ))}
+        </>
+        
+        }
+        </div> */}
       </div>
     </div>
   );

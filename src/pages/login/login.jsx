@@ -15,6 +15,7 @@ const Login = () => {
           placeholder="type your password"
           className="in"
         />
+
         <button className="loginbtn">Login</button>
       </div>
     </div>
